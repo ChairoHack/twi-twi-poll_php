@@ -46,8 +46,6 @@ try {
 
     $url = parse_url(CURRENT_URI);
     $rpath = str_replace(BASE_CONTEXT_PATH, '', $url['path']);
-    echo $rpath;
-    echo '\n';
     $method = strtolower($_SERVER['REQUEST_METHOD']);
 
     route($rpath, $method);
