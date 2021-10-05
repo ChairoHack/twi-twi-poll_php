@@ -46,15 +46,14 @@ try {
 
     $url = parse_url(CURRENT_URI);
     $rpath = str_replace(BASE_CONTEXT_PATH, '', $url['path']);
+    echo $rpath;
+    echo '\n';
     $method = strtolower($_SERVER['REQUEST_METHOD']);
-    
+
     route($rpath, $method);
-    
+
     \partials\footer();
-    
-} catch(Throwable $e) {
+} catch (Throwable $e) {
 
     die('<h1>何かが凄くおかしいようです。</h1>');
-    
 }
-
