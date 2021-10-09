@@ -11,7 +11,7 @@ class DataSource
     private $sqlResult;
     public const CLS = 'cls';
 
-    public function __construct($host = 'us-cdbr-east-04.cleardb.com', $port = '3306', $dbName = 'heroku_3f88ebdf6ce2a97', $username = 'b76bed418756ad', $password = 'd2b36c8e')
+    public function __construct($host = 'twi-twi-poll.com', $port = '3306', $dbName = 'pollapp', $username = 'chairo', $password = 'zmLig_LFTX7i')
     {
 
         $dsn = "mysql:host={$host};port={$port};dbname={$dbName};";
